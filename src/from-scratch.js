@@ -16,8 +16,27 @@ const measureRain = (inches) => {
 
 // measureRain(16);
 
-const happyBirthdayPet = () => {
+const happyBirthdayPet = (breed, age) => {
+  if (breed === 'snake') {
+    console.log('Hiss hiss!');
+  } else if (breed === 'cat' && age < 5) {
+    console.log('Mew mew!');
+  } else if (breed === 'cat' && age >= 5) {
+    console.log('Meow meow!');
+  } else if (breed === 'dog' && age < 5) {
+    console.log('Arf arf!');
+  } else if (breed === 'dog' && age >= 5 && age < 10) {
+    console.log('Woof woof!');
+  } else if (breed === 'dog' && age >= 10) {
+    console.log('Boof!');
+  } else {
+    console.log('Happy Birthday!');
+  };
 };
+
+// tests
+
+happyBirthdayPet('dog', 12)
 
 const funTypes = () => {
 };
